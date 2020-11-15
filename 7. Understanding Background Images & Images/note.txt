@@ -1,0 +1,76 @@
+-background-image overwhite background-color
+-you can dfine multiple backgrounds, only one solid color though,
+multiple images are possible
+
+background-size
+
+if only set one value this value refers to the width of the image and by default, it's then repeated
+
+if set two value (background-size: 300px 100px;)
+the first value (300px) refers to the width and the second value (100px) refers to the height.
+if you don't set the height, has automatically adjusted to keep the aspect ratio (image ratio), 
+if you do set a value to the height the image is forced into there dimensions, so it may vary well be distorted
+
+if set percentage values like 50% (background-size: 50%;)
+the image takes 50% of the available containeer width
+
+if set to percentages values like (background-size: 50% 100%;)
+the first value 50% refers to the width and the second value 100% refers to the height.
+
+if set value to auto is refers to the image ratio
+
+keywords
+background-size: cover;
+cover: Essentially does the same as 100% (only width), cover finds out which part of your container, so width or height is the important one to be aligned to your image. Cover is a setting that will ensure that your image always fills the entire container, it will even zoom in if your image is smaller than the container. So cover is the best setting if you want to ensure that ther never is any whitespace anywhere in your container.
+
+background-size: contain;
+contain: ensures that the full image is visible in the container. Maybe see whitespace that happes cuz the image actually doesn't fill the entire container because contain does not make sure that the entire container is filled, like cover does, instead it ensures that the entire image is possible and if that means that there is some remaining space in the container, so be it.
+
+
+background-repeat
+
+Can set to no-repeat,
+repeat-x(only repeat the image on the x-axis),
+repaet-y(only repeat the image on the y-axis)
+
+
+background-position
+
+if define a pixel value (background-position:20px;)
+The image is moved to the right by 20 pixels.
+the first value define the x-axis
+
+if (background-position:20px 50px;)
+
+The second value refers to the top
+so image moved 20px eft and 50px top
+
+if define percentage values (background-position:10%;)
+With the percentage values, you can define how much of the excess space, so of the parts of the image that do not make it into the container, how these parts should be distributed.
+
+background-origin
+it's a bit comparable to box sizing, the values you can assing are very similar though there is an extra value.
+
+
+images
+By setting a height on a container, the image will not be affected because the default behavior is if you enter an image tag and you point to an image then the default height and width of the origianl image will be used and will be enterd iton your document, no matter which width and height you set for the surronding element. So in our case here if we have a look at our image you'll see it has dimensions of 186 x 190.
+
+if we set height 100% in a image rule then display the original height on the image.Same as width.
+
+if it is a block or a inline-block the above rule doesn't matter
+100% is the width or the height we define on container.
+
+inline element bug 
+set vertical-aligh: top or bottom (only in the image)
+oe set display: block  (only in the image)
+
+
+Linear Grandients && Radial Grandients
+-are treated as images
+background-image: linear-gradient(red, blue);
+get a gradient form red to blue
+the default is vertically is a perfect line from top to bottom 
+and it transitions form red smoothly to blue
+
+Radial Grandients
+starts at a certain shape and then transitions to all the areas around it.
