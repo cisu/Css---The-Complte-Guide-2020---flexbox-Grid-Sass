@@ -1,0 +1,11 @@
+Units
+pixels px 
+percentages %   
+root em rem 
+em 
+viewport height vh
+viewport width vw
+
+
+percentages values depend on the position
+position: fixed; have parent element the viewport.
