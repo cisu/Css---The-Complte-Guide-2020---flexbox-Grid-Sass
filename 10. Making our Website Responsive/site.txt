@@ -1,0 +1,5 @@
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#Attributes
+
+https://css-tricks.com/snippets/html/responsive-meta-tag/
+
+http://www.html-5.com/metatags/meta-viewport.html

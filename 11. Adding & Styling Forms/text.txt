@@ -1,0 +1,91 @@
+ADVANCED ATTRIBUTE SELECTORS
+
+
+1. Element with ATTRIBUTE: 
+Select any element which has a type attribute
+
+[type] {
+    color: red;
+}
+
+<input type='text'>
+
+    ---------------------------------------------------------
+
+2. Element with Specific Attribute Value: 
+Select only element which has a type='email' attribute
+
+[type='email]{
+    color: red;
+}
+
+<input type='email'>
+
+    ---------------------------------------------------------
+
+3. Element with Specific Attribute Value in List: 
+Select any element that has en-us in it's list, it might have more values than that but it has to have en-us.
+
+[lang~='en-us']{
+    color: red;
+}
+
+<p lang='en-us en-gb'>Hi!</p>
+
+    ---------------------------------------------------------
+
+4. Element with Specific Attribute Value/Value- : 
+Select an element with a specific attribute value or this attribute value as a prefix. Lang should be equal to 'en' or actually start with 'en' and the important part is that start means that it has be followed immediately after the part we have in the selector, so after the 'en' by a dash, but after the dash, you may have any combination of characters you want.
+
+[lang |='en']{
+    color: red;
+}
+
+<p lang='en-us'>Hi!</p>
+
+    ---------------------------------------------------------
+
+5. Element with Specific Attribute Value Prefix: 
+Here we are selecting, with that special character here in front of the equal sign, we're selecting any element wich starts with a hash, so where the vale of the ref attribute starts with the hash to be precise, that would match an internal link for example. Select all strings in href, start with a '#'
+
+[href^='#']{
+    color: red;
+}
+
+<a href='#all'>Link</a>
+
+    ---------------------------------------------------------
+
+6. Element with Specific Attribute Value Suffix:
+Selecet all strings in href, end with a '.de'
+
+[href$='.de']{
+    color: red;
+}
+
+<a href='ab.de'>Link</a>
+
+    ---------------------------------------------------------
+
+7. Element with At Least One Attribute Value:
+Selecet all element that have the soucre attribute and where the source attribute then holds some content which contains cdn, doesn;t have to be at the beginning, doesn't heve to be at the and, just somewhere in the value, for example we would target this image where cdn is right in the middle.
+
+[src*='cdn']{
+    color: red;
+}
+
+<img src='i.cdn.com'>
+
+    ---------------------------------------------------------
+
+8. Check Value Case-Insensitively :
+Same with 7. but with the 'i' we're saying we should be case insensitive, lowercase or capital letters doesn't matter.
+
+[src*= 'cdn' i]{
+    color: red;
+}
+
+<img src='i.CDN.com'>
+
+
+

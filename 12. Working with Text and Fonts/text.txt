@@ -1,0 +1,44 @@
+i can manipulate the text display new line ect by
+ white-space property
+
+
+    white-space: normal;
+    
+    white-space: nowrap;
+    
+    white-space: pre; 
+    change the contect with actually line on html code (only) the overflow contect DOESN'T wrap
+    
+    white-space: pre-wrap;
+    Same as above but the overflow contect wrap
+
+    white-space: pre-line; Lines fill whenever possible but the hard code line on html does apply
+
+
+    
+    line-height: 1 or normal;
+    By default, the line height depends on the font family e are using. If we change that behavior and add he line property with a value of two for example, then this will alwyas refer to the font size 
+
+    font: italic small-caps 700 1.2rem/2 'AnonymousPro', sans-serif;
+    
+    font: font-style font-variant font-weight font-size/line-height font-family; 
+
+    system font
+    font: menu; display fonts which display as menu text
+    font: status-bar; display fonts which display as menu text
+
+
+    font-display
+    swap: 
+
+    block:
+
+    fallback:
+
+    optional: 
+
+    auto: means that the browser our visitor is using will automatically choose a value of his choice
+    
+
+ 
+ 
