@@ -57,6 +57,8 @@
 .plan.plan--highlighted {
   background: #19b84c;
   color: white;
+  height: 30rem;
+  z-index: 5;
   /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); */
 }
 
@@ -92,15 +94,21 @@
 
 @media (min-width: 40rem) {
   .plan__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     /* margin: auto; */
-    text-align: center;
+    /* text-align: center; */
   }
 
   .plan {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    height: 28rem;
+    /* display: inline-block; */
     width: 30%;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     min-width: 12.8rem;
     max-width: 25rem;
   }
@@ -134,10 +142,15 @@
 
 @media (min-width: 40rem) {
   .key-feature {
-    display: inline-block;
+    /* display: inline-block; */
     width: 30%;
     max-width: 25rem;
-    vertical-align: top;
+    /* vertical-align: top; */
+  }
+
+  .key-feature__list {
+    display: flex;
+    justify-content: center;
   }
 }
 
